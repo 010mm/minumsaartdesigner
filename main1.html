@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="ham1.css">
+    <title>main1</title>
+</head>
+
+<body style="overflow-x: hidden; background-color: #675A55;">
+
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+  
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <a href="#" onclick="location.href='index.html'"><li>메인</li></a>
+      <a href="#" onclick="location.href='main1.html'" ><li>황일선</li></a>
+
+        <div class="menu1">
+          <a href="#" onclick="location.href='sub1.html'" ><p>디 에센셜 시리즈 </p></a>
+          <a href="#" onclick="location.href='sub3.html'" ><p>셰익스 피어 희곡 전집 출간 400주년 기념 에디션</p></a>
+          <a href="#" onclick="location.href='sub4.html'" ><p>노르웨이의 숲</p></a>
+          <a href="#" onclick="location.href='sub5.html'" ><p>동조자, 헌신자</p></a>
+          <a href="#" onclick="location.href='sub6.html'" ><p>산문기행, 내면기행</p></a>
+    
+        </div>
+        <a href="#" onclick="location.href='main2.html'" ><li>최지은</li></a>
+
+        <div class="menu1">
+          <a href="#" onclick="location.href='sub8.html'" ><p>참을 수 없는 존재의 가벼움</p></a>
+          <a href="#" onclick="location.href='sub9.html'" ><p>한국 문학 소설집 시리즈</p></a>
+          <a href="#" onclick="location.href='sub10.html'" ><p>이탈로 칼비노 전집 시리즈</p></a>
+        </div>
+        <a href="#" onclick="location.href='main3.html'" ><li>유진아</li></a>
+
+        <div class="menu1">
+          <a href="#" onclick="location.href='sub11.html'" ><p>민음사 탐구 시리즈</p></a>
+          <a href="#" onclick="location.href='sub12.html'" ><p>바로 손을 흔드는 대신</p></a>
+          <a href="#"onclick="location.href='sub14.html'"><p>말 놓을 용기</p></a>
+          <a href="#" onclick="location.href='sub15.html'" ><p>우리가 날씨다</p></a>
+          <a href="#" onclick="location.href='sub13.html'"  ><p>클라우드 쿠쿠 랜드</p></a>
+
+      </div>
+    </ul>
+</nav>
+
+<header>
+  <div class="head" onclick="window.open('index.html')" style='cursor:pointer;'>
+<img src="img/logo1.png" style="width: 71px; height: 33px;">
+  </div>
+  </header>
+
+<div class="main">
+  <img src="img/main1.png">
+
+</div>
+
+    <div class="box1">
+
+
+<button class="디에센셜" style="margin-left: 45px;" onclick="location.href='sub1.html'">디 에센셜</button>
+<button class="셰익스피어" onclick="location.href='sub3.html' ">셰익스 피어</button>
+<button class="노르웨이" onclick="location.href='sub4.html' ">노르웨이의 숲</button>
+    </div>
+<div class="box2">
+<button class="동조자" onclick="location.href='sub5.html' " >동조자</button>
+<button class="헌신자" onclick="location.href='sub5.html' "  >헌신자</button>
+<button class="내면기행" onclick="location.href='sub6.html' ">내면기행</button>
+<button class="산문기행" onclick="location.href='sub6.html' " >산문기행</button>
+</div>
+
+    </div>
+
+    <div class="box3"></div>
+
+
+      <div class="slideshow-container">
+          
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/b1.png" style="width:100%">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/b2.png" style="width:100%">
+          
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/b3.png" style="width:100%">
+            
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/b4.png" style="width:100%">
+            
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/b5.png" style="width:100%">
+          
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+  
+  
+          </div>
+  
+          <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000);
+  }
+  </script>
+
+  
+<div class="box8">
+  황일선 디자이너 작품
+</div>
+
+    <div class="box7">
+        <div class="img1"><img src="img/7.png"></div>
+        <div class="img2"><img src="img/8.png"></div>
+        <div class="img3"><img src="img/9.png"></div>
+        </div>
+
+    <div class="box4">
+        <div class="img4"><img src="img/10.png"></div>
+        <div class="img5"><img src="img/11.png"></div>
+    </div>
+
+    <div class="box5">
+        <div class="img6"><img src="img/12.png"></div>
+        <div class="img7"><img src="img/13.png"></div>
+    </div>
+
+    <a style="display:scroll; position:fixed; bottom:10px; right:5px;" href="#" ><img src="img/button1.png"></a>
+<div class="box3" style="height: 100px; background-color: #675A55; "></div>
+<footer style="background-color: #382E2C; height: 90px;">
+    
+</body>
+</html>

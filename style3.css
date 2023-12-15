@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: relative;
+    height: 90px;
+    width: 100vw;
+    padding-bottom: 20px;
+    display: flex;
+    background-color:  #887877;
+
+  }
+
+  .head{ 
+    display: block;
+margin: 0 auto;
+position: absolute;}
+
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+  a:active {
+   color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}

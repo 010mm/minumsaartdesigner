@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+  height: 90px;
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  background-color:  #000000;
+
+}
+
+.box0{
+  padding: 20px;
+  background-color: #000000;
+}
+
+.head{ 
+  display: block;
+margin: 0 auto;
+position: absolute;}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+}
+
+
+.flip { 
+    width: 300px;
+    height: 700px;
+    margin-top: 100px;
+    margin-right: 45px;
+  }
+  
+  .card {
+    float: left;
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+  }	
+  
+  .front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: none; 
+  }
+  
+  .back { 
+    background: none; 
+    transform: rotateY(180deg);
+  }
+  
+  .flip:hover .card {
+    transform: rotateY(180deg);
+  }
+
+
+  .card2 {
+    float: left;
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+  }	
+
+  .flip:hover .card2 {
+    transform: rotateY(180deg);
+  }
+
+  .card3 {
+    float: left;
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+  }	
+
+  .flip:hover .card3 {
+    transform: rotateY(180deg);
+  }
+
+  .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 202px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {box-sizing:border-box}
+  
+ 
+  .slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  .mySlides {
+    display: none;
+  }
+  
+  
+  
+ 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 60px;
+    color: white;
+    font-size: 30px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
+    font-weight: 100;    
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+    margin-top: 50px;
+    margin-left: 46px;
+    background-color: none;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+  }
+  
+  .active, .dot:hover {
+    color: gray;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .box3{
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .box4{
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .box5{
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .box6{
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 124px;
+    
+  }
+
+  .box7 {
+    height: 127px;
+  }
+
+
+  a:link {
+    color: #313131;
+  }
+  a:visited {
+    color: #313131;
+  }
+  a:hover {
+    color: #313131;
+  }
+  a:active {
+   color: #313131;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+  

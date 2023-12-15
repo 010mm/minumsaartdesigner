@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+  position: relative;
+  height: 90px;
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  background-color: #272022;
+
+}
+
+.head{ 
+  display: block;
+margin: 0 auto;
+position: absolute;}
+
+
+.sub1{
+  display: flex;
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+  background-color: #272022;
+
+}
+
+.box1{
+  height: 124px;
+  border-top: 1px solid #CCA703;
+  border-bottom: 1px solid #CCA703;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 100;  
+  padding-top: 40px;
+
+}
+
+.box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+  margin-top: -100px;
+
+}
+
+.img1{
+  float: left;
+  margin-right: 98px;
+}
+
+.img2{
+  float: left;
+  margin-right: 98px;
+}
+.img3{
+  float: left;
+  margin-right: 98px;
+}
+
+.box3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  margin-bottom: 200px;
+  margin-top: -200px;
+}
+
+.img4{
+  float: left;
+  margin-right: 100px;
+}
+
+.img5{
+  float: left;
+  margin-right: 100px;
+}
+
+
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 420%;
+  width: auto;
+  margin-top: -22px;
+  padding: 60px;
+  color: white;
+  font-size: 30px;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 100;    
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+.dot {
+  cursor: pointer;
+  height: 73px;
+  width: 298px;
+  border: 1px solid #CCA703;
+  border-radius: 40px;
+  padding: 25px 30px;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #BC427B;
+  margin-top: 50px;
+  margin-left: 46px;
+  background-color: #1A1516;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #272022;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+ color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}

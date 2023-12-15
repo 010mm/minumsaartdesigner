@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+  height: 90px;
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  background-color:  #EF7BB7;
+
+}
+
+.head{ 
+  display: block;
+margin: 0 auto;
+position: absolute;
+}
+
+.main1{
+  padding-top: 20px; 
+background-color :  #EF7BB7;
+}
+
+
+.box1{
+  
+  display: flex;
+  height: 10px;
+padding-left: 300px;
+padding-top: 50px;
+  color: white;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.box2{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:1000px;
+  margin-top: 200px;
+  margin-bottom: -100px;
+}
+
+
+.box3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.img2 {
+
+  float: left;
+  margin-left: 100px;
+}
+
+.img3 {
+
+  float: left;
+  margin-left: 100px;
+}
+
+
+.box4{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.img4 {
+
+  float: left;
+  margin-left: 100px;
+}
+
+.img5 {
+
+  float: left;
+  margin-left: 100px;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 360%;
+  width: auto;
+  margin-top: -22px;
+  padding: 60px;
+  color: white;
+  font-size: 30px;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 100;    
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+.dot {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+  margin-top: 50px;
+  margin-left: 46px;
+  background-color: none;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  color: gray;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+ color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

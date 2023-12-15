@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="ham4.css">
+    <title>sub2</title>
+</head>
+<body style="overflow-x: hidden; background-color: #1B1517; width: 100vw;">
+
+
+    <div class="head" onclick="window.open('www.naver.com')" style='cursor:pointer;'>
+      <img src="img/logo.png" style=" width: 71px; height: 33px; display:block; margin: 0 auto;">
+          </div>
+          
+    <nav role="navigation">
+  
+      <div id="menuToggle">
+  
+        <input type="checkbox" />
+      
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="#" onclick="location.href='index.html'"><li>메인</li></a>
+          <a href="#" onclick="location.href='main1.html'" ><li>황일선</li></a>
+  
+  
+          <div class="menu1">
+            <a href="#" onclick="location.href='sub1.html'" ><p>디 에센셜 시리즈 </p></a>
+            <a href="#" onclick="location.href='sub3.html'" ><p>셰익스 피어 희곡 전집 출간 400주년 기념 에디션</p></a>
+            <a href="#" onclick="location.href='sub4.html'" ><p>노르웨이의 숲</p></a>
+            <a href="#" onclick="location.href='sub5.html'" ><p>동조자, 헌신자</p></a>
+            <a href="#" onclick="location.href='sub6.html'" ><p>산문기행, 내면기행</p></a>
+      
+          </div>
+          <a href="#" onclick="location.href='main2.html'" ><li>최지은</li></a>
+    
+          <div class="menu1">
+            <a href="#" onclick="location.href='sub8.html'" ><p>참을 수 없는 존재의 가벼움</p></a>
+            <a href="#" onclick="location.href='sub9.html'" ><p>한국 문학 소설집 시리즈</p></a>
+            <a href="#" onclick="location.href='sub10.html'" ><p>이탈로 칼비노 전집 시리즈</p></a>
+          </div>
+          <a href="#" onclick="location.href='main3.html'" ><li>유진아</li></a>
+    
+          <div class="menu1">
+            <a href="#" onclick="location.href='sub11.html'" ><p>민음사 탐구 시리즈</p></a>
+            <a href="#" onclick="location.href='sub12.html'" ><p>바로 손을 흔드는 대신</p></a>
+            <a href="#"onclick="location.href='sub14.html'"><p>말 놓을 용기</p></a>
+            <a href="#" onclick="location.href='sub15.html'" ><p>우리가 날씨다</p></a>
+            <a href="#" onclick="location.href='sub13.html'"  ><p>클라우드 쿠쿠 랜드</p></a>
+  
+          </div>
+        </ul>
+    </nav>
+  
+  <div class="sub1">
+    <img src="img/sub01.png">
+  </div>
+
+  <div class="box1">
+    윌리엄 셰익스 피어 희곡 전집 출간 400주년 기념 에디션
+  </div>
+
+  <div class="box2">
+
+    <div class="img1"><img src="img/su1.png"></div>
+    <div class="img2"><img src="img/su2.png"></div>
+    <div class="img3"><img src="img/su3.png"></div>
+
+  </div>
+
+  <div class="box3">
+
+    <div class="img5"><img src="img/su4.png"></div>
+    <div class="img5"><img src="img/su5.png"></div>
+
+  </div>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+     
+      <img src="img/s1.png" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="img/s2.png" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="img/s3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+     
+        <img src="img/s4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+      
+          <img src="img/s5.png" style="width:100%">
+</div>
+
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)">한 여름밤의 꿈</span>
+    <span class="dot" onclick="currentSlide(2)">베니스의 상인</span>
+    <span class="dot" onclick="currentSlide(3)">헛 소문에 큰 소동</span>
+    <span class="dot" onclick="currentSlide(4)">십이야</span>
+    <span class="dot" onclick="currentSlide(5)">좋으실 대로</span>
+
+    <div class="back"></div>
+
+
+  </div>
+</body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="box4" style="height: 300px;"></div>
+<a href="javascript:history.back();" style="text-decoration-line: none; font-family: pretendard, sans-serif;
+font-style: normal;
+font-weight: 400;padding-left: 50px; width: 100vw; height:100px; position: absolute; "> <돌아가기 </a>
+<div class="box4" style="height: 100px;"></div>
+<a style="display:scroll;position:fixed;bottom:10px;right:5px;" href="#" ><img src="img/button3.png"></a>
+<div class="box5" style=" border: 1px solid #CCA703; "></div>
+<footer style="background-color: none; height: 90px;">
+
+</html>
